@@ -1,0 +1,25 @@
+PODS:
+  - HHRCIMLib (1.0.0):
+    - HHRCIMLib/HHRCIM (= 1.0.0)
+  - HHRCIMLib/HHRCIM (1.0.0):
+    - HHRCIMLib/HHRCIM/IMKit (= 1.0.0)
+    - HHRCIMLib/HHRCIM/IMLib (= 1.0.0)
+    - HHRCIMLib/HHRCIM/IMVersion (= 1.0.0)
+  - HHRCIMLib/HHRCIM/IMKit (1.0.0):
+    - HHRCIMLib/HHRCIM/IMLib
+  - HHRCIMLib/HHRCIM/IMLib (1.0.0)
+  - HHRCIMLib/HHRCIM/IMVersion (1.0.0)
+
+DEPENDENCIES:
+  - HHRCIMLib (from `../`)
+
+EXTERNAL SOURCES:
+  HHRCIMLib:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  HHRCIMLib: 55db4d40e0d354aa172c1837711638eb578357dc
+
+PODFILE CHECKSUM: f74a4ece3dc47b24fab252a8e8d38ebf5cf11e5f
+
+COCOAPODS: 1.6.1

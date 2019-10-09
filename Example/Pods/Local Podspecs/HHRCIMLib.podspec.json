@@ -1,0 +1,93 @@
+{
+  "name": "HHRCIMLib",
+  "version": "1.0.0",
+  "summary": "A short description of HHRCIMLib.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/GasparChu/HHRCIMLib",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "GasparChu": "598176910@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/GasparChu/HHRCIMLib.git",
+    "tag": "1.0.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "subspecs": [
+    {
+      "name": "HHRCIM",
+      "subspecs": [
+        {
+          "name": "IMLib",
+          "ios": {
+            "vendored_frameworks": "HHRCIMKit/IMLib/RongIMLib.framework",
+            "vendored_libraries": [
+              "HHRCIMKit/IMLib/libopencore-amrnb.a",
+              "HHRCIMKit/IMLib/libopencore-amrwb.a",
+              "HHRCIMKit/IMLib/libvo-amrwbenc.a"
+            ],
+            "resources": "HHRCIMKit/IMLib/RCConfig.plist",
+            "libraries": [
+              "stdc++",
+              "sqlite3",
+              "z"
+            ]
+          }
+        },
+        {
+          "name": "IMKit",
+          "ios": {
+            "vendored_frameworks": "HHRCIMKit/IMKit/RongIMKit.framework",
+            "resources": [
+              "HHRCIMKit/IMKit/Emoji.plist",
+              "HHRCIMKit/IMKit/RongCloud.bundle",
+              "HHRCIMKit/IMKit/RCColor.plist",
+              "HHRCIMKit/IMKit/en.lproj",
+              "HHRCIMKit/IMKit/zh-Hans.lproj"
+            ],
+            "frameworks": [
+              "AssetsLibrary",
+              "MapKit",
+              "ImageIO",
+              "CoreLocation",
+              "SystemConfiguration",
+              "QuartzCore",
+              "OpenGLES",
+              "CoreVideo",
+              "CoreTelephony",
+              "CoreMedia",
+              "CoreAudio",
+              "CFNetwork",
+              "AudioToolbox",
+              "AVFoundation",
+              "UIKit",
+              "CoreGraphics",
+              "SafariServices",
+              "Photos",
+              "SafariServices"
+            ]
+          },
+          "dependencies": {
+            "HHRCIMLib/HHRCIM/IMLib": [
+
+            ]
+          }
+        },
+        {
+          "name": "IMVersion",
+          "ios": {
+            "source_files": [
+              "HHRCIMKit/IMVersion/IMVersion.md",
+              "HHRCIMKit/IMVersion/release_notes_ios.txt"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -38,7 +38,7 @@
 
 /* Begin PBXFileReference section */
 		35FB2A9ACB0604990ADEC84C /* Pods_HHRCIMLib_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HHRCIMLib_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3C16FDA15C08099ECD9560FE /* HHRCIMLib.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = HHRCIMLib.podspec; path = ../HHRCIMLib.podspec; sourceTree = "<group>"; };
+		3C16FDA15C08099ECD9560FE /* HHRCIMLib.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = HHRCIMLib.podspec; path = ../HHRCIMLib.podspec; sourceTree = "<group>"; };
 		440F9036D4E122FA58D2C674 /* Pods_HHRCIMLib_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HHRCIMLib_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58A195388D20070C39A /* HHRCIMLib_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HHRCIMLib_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -61,10 +61,10 @@
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7B449744236D12C5CC2A4F47 /* Pods-HHRCIMLib_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HHRCIMLib_Tests.release.xcconfig"; path = "Target Support Files/Pods-HHRCIMLib_Tests/Pods-HHRCIMLib_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		7B87EE781D39C221A6C678C1 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		7B87EE781D39C221A6C678C1 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		8036A59E1A75E849DAD9904F /* Pods-HHRCIMLib_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HHRCIMLib_Example.debug.xcconfig"; path = "Target Support Files/Pods-HHRCIMLib_Example/Pods-HHRCIMLib_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		D39AC20510DA32F2660D9D6A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		D39AC20510DA32F2660D9D6A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		F710CEDDE7F206E065001393 /* Pods-HHRCIMLib_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HHRCIMLib_Tests.debug.xcconfig"; path = "Target Support Files/Pods-HHRCIMLib_Tests/Pods-HHRCIMLib_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		FFF8C310F10DED1FF9F227CA /* Pods-HHRCIMLib_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HHRCIMLib_Example.release.xcconfig"; path = "Target Support Files/Pods-HHRCIMLib_Example/Pods-HHRCIMLib_Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -103,7 +103,6 @@
 				F710CEDDE7F206E065001393 /* Pods-HHRCIMLib_Tests.debug.xcconfig */,
 				7B449744236D12C5CC2A4F47 /* Pods-HHRCIMLib_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -208,7 +207,6 @@
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
-				A7BE53A2E43EAEA0A9890197 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -248,6 +246,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = GasparChu;
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = LMXG7U7E57;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -258,6 +259,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -337,28 +339,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A7BE53A2E43EAEA0A9890197 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-HHRCIMLib_Example/Pods-HHRCIMLib_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/HHRCIMLib/HHRCIMLib.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HHRCIMLib.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HHRCIMLib_Example/Pods-HHRCIMLib_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -498,6 +478,7 @@
 			baseConfigurationReference = 8036A59E1A75E849DAD9904F /* Pods-HHRCIMLib_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = LMXG7U7E57;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HHRCIMLib/HHRCIMLib-Prefix.pch";
 				INFOPLIST_FILE = "HHRCIMLib/HHRCIMLib-Info.plist";
@@ -514,6 +495,7 @@
 			baseConfigurationReference = FFF8C310F10DED1FF9F227CA /* Pods-HHRCIMLib_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = LMXG7U7E57;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HHRCIMLib/HHRCIMLib-Prefix.pch";
 				INFOPLIST_FILE = "HHRCIMLib/HHRCIMLib-Info.plist";

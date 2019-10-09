@@ -1,0 +1,6 @@
+framework module Pods_HHRCIMLib_Example {
+  umbrella header "Pods-HHRCIMLib_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
