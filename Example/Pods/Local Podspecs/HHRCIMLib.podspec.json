@@ -25,13 +25,13 @@
         {
           "name": "IMLib",
           "ios": {
-            "vendored_frameworks": "HHRCIMKit/IMLib/RongIMLib.framework",
+            "vendored_frameworks": "HHRCIMLib/IMLib/RongIMLib.framework",
             "vendored_libraries": [
-              "HHRCIMKit/IMLib/libopencore-amrnb.a",
-              "HHRCIMKit/IMLib/libopencore-amrwb.a",
-              "HHRCIMKit/IMLib/libvo-amrwbenc.a"
+              "HHRCIMLib/IMLib/libopencore-amrnb.a",
+              "HHRCIMLib/IMLib/libopencore-amrwb.a",
+              "HHRCIMLib/IMLib/libvo-amrwbenc.a"
             ],
-            "resources": "HHRCIMKit/IMLib/RCConfig.plist",
+            "resources": "HHRCIMLib/IMLib/RCConfig.plist",
             "libraries": [
               "stdc++",
               "sqlite3",
@@ -42,13 +42,13 @@
         {
           "name": "IMKit",
           "ios": {
-            "vendored_frameworks": "HHRCIMKit/IMKit/RongIMKit.framework",
+            "vendored_frameworks": "HHRCIMLib/IMKit/RongIMKit.framework",
             "resources": [
-              "HHRCIMKit/IMKit/Emoji.plist",
-              "HHRCIMKit/IMKit/RongCloud.bundle",
-              "HHRCIMKit/IMKit/RCColor.plist",
-              "HHRCIMKit/IMKit/en.lproj",
-              "HHRCIMKit/IMKit/zh-Hans.lproj"
+              "HHRCIMLib/IMKit/Emoji.plist",
+              "HHRCIMLib/IMKit/RongCloud.bundle",
+              "HHRCIMLib/IMKit/RCColor.plist",
+              "HHRCIMLib/IMKit/en.lproj",
+              "HHRCIMLib/IMKit/zh-Hans.lproj"
             ],
             "frameworks": [
               "AssetsLibrary",
@@ -82,8 +82,8 @@
           "name": "IMVersion",
           "ios": {
             "source_files": [
-              "HHRCIMKit/IMVersion/IMVersion.md",
-              "HHRCIMKit/IMVersion/release_notes_ios.txt"
+              "HHRCIMLib/IMVersion/IMVersion.md",
+              "HHRCIMLib/IMVersion/release_notes_ios.txt"
             ]
           }
         }

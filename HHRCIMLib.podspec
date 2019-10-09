@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'HHRCIMLib'
-  s.version          = '1.0.0'
+  s.version          = '1.0.1'
   s.summary          = 'A short description of HHRCIMLib.'
 
 # This description is used to generate tags and improve search results.
@@ -34,19 +34,19 @@ TODO: Add long description of the pod here.
 
 s.subspec 'HHRCIM' do |sT|
 sT.subspec 'IMLib' do |ss|
-ss.ios.vendored_frameworks = "HHRCIMKit/IMLib/RongIMLib.framework"
+ss.ios.vendored_frameworks = "HHRCIMLib/IMLib/RongIMLib.framework"
 
-ss.ios.vendored_libraries = ["HHRCIMKit/IMLib/libopencore-amrnb.a", "HHRCIMKit/IMLib/libopencore-amrwb.a", "HHRCIMKit/IMLib/libvo-amrwbenc.a"]
+ss.ios.vendored_libraries = ["HHRCIMLib/IMLib/libopencore-amrnb.a", "HHRCIMLib/IMLib/libopencore-amrwb.a", "HHRCIMLib/IMLib/libvo-amrwbenc.a"]
 
-ss.ios.resources = "HHRCIMKit/IMLib/RCConfig.plist"
+ss.ios.resources = "HHRCIMLib/IMLib/RCConfig.plist"
 
 ss.ios.libraries = ["stdc++", "sqlite3", "z"]
 end
 
 sT.subspec 'IMKit' do |ss|
-ss.ios.vendored_frameworks = "HHRCIMKit/IMKit/RongIMKit.framework"
+ss.ios.vendored_frameworks = "HHRCIMLib/IMKit/RongIMKit.framework"
 
-ss.ios.resources = ["HHRCIMKit/IMKit/Emoji.plist", "HHRCIMKit/IMKit/RongCloud.bundle", "HHRCIMKit/IMKit/RCColor.plist", "HHRCIMKit/IMKit/en.lproj", "HHRCIMKit/IMKit/zh-Hans.lproj"]
+ss.ios.resources = ["HHRCIMLib/IMKit/Emoji.plist", "HHRCIMLib/IMKit/RongCloud.bundle", "HHRCIMLib/IMKit/RCColor.plist", "HHRCIMLib/IMKit/en.lproj", "HHRCIMLib/IMKit/zh-Hans.lproj"]
 
 ss.ios.frameworks = ["AssetsLibrary", "MapKit", "ImageIO", "CoreLocation", "SystemConfiguration", "QuartzCore", "OpenGLES", "CoreVideo", "CoreTelephony", "CoreMedia", "CoreAudio", "CFNetwork", "AudioToolbox", "AVFoundation", "UIKit", "CoreGraphics", "SafariServices", "Photos", "SafariServices"]
 
@@ -54,7 +54,7 @@ ss.dependency 'HHRCIMLib/HHRCIM/IMLib'
 end
 
 sT.subspec 'IMVersion' do |ss|
-ss.ios.source_files = "HHRCIMKit/IMVersion/IMVersion.md", "HHRCIMKit/IMVersion/release_notes_ios.txt"
+ss.ios.source_files = "HHRCIMLib/IMVersion/IMVersion.md", "HHRCIMLib/IMVersion/release_notes_ios.txt"
 end
 end
 
